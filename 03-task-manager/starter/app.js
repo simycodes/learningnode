@@ -3,6 +3,8 @@ const app = express();
 
 const tasks = require('./routes/tasks');
 const connectDB = require('./db/connect');
+
+//importing the .env file so its secret variables can be accessed and used in the app.js
 require('dotenv').config();
 
 const notFound = require("./middleware/not-found");
